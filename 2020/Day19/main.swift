@@ -33,7 +33,17 @@ func num(_ input: String) -> String {
 }
 
 func req(_ input: String) -> String {
+    let part1 = input.components(separatedBy: ": ").first!
     let part2 = input.components(separatedBy: ": ").last!
+    
+    if Int(part1)! == 8 {
+        return "(\(num("42")))+"
+    }
+    
+    // Manual work changing this and stuff...
+    if Int(part1)! == 11 {
+        return "(\(num("42"))){2}(\(num("31"))){2}"
+    }
     
     if part2.first == "\"" {
         return String(part2.dropFirst().first!)
