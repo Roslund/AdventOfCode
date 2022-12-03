@@ -6,11 +6,6 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		AD36B818293AA2B50058BC55 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B720293AA0530058BC55 /* main.swift */; };
-		AD36B819293AA2B80058BC55 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B71F293AA0530058BC55 /* input.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		AD36B539293A9F390058BC55 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -173,6 +168,8 @@
 		AD36B784293AA0530058BC55 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AD36B786293AA0530058BC55 /* input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
 		AD36B787293AA0530058BC55 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AD36B820293AA8570058BC55 /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
+		AD36B822293AA8950058BC55 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,6 +567,7 @@
 				AD36B732293AA0530058BC55 /* Day5 */,
 				AD36B741293AA0530058BC55 /* Day6 */,
 				AD36B739293AA0530058BC55 /* Day7 */,
+				AD36B81F293AA83F0058BC55 /* Day 8 */,
 				AD36B73D293AA0530058BC55 /* Day9 */,
 				AD36B72D293AA0530058BC55 /* test */,
 				AD36B735293AA0530058BC55 /* Shared */,
@@ -901,6 +899,15 @@
 			path = Day19;
 			sourceTree = "<group>";
 		};
+		AD36B81F293AA83F0058BC55 /* Day 8 */ = {
+			isa = PBXGroup;
+			children = (
+				AD36B820293AA8570058BC55 /* input.swift */,
+				AD36B822293AA8950058BC55 /* main.swift */,
+			);
+			path = "Day 8";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -960,8 +967,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD36B818293AA2B50058BC55 /* main.swift in Sources */,
-				AD36B819293AA2B80058BC55 /* input.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
