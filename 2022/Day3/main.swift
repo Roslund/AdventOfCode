@@ -32,7 +32,7 @@ rucksacks
     .map(commonItems(given:))
     .map(prioritize(item:))
     .reduce(0, +)
-    .print(prefex: "Part1:")
+    .print(prefix: "Part1:")
 
 rucksacks
     .chunks(ofCount: 3)
@@ -40,4 +40,4 @@ rucksacks
     .map(commonItems(given:))
     .map(prioritize(item:))
     .reduce(0, +)
-    .print(prefex: "Part2:")
+    .print(prefix: "Part2:")
