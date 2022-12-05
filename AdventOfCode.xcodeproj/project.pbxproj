@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		AD36B829293B5CB20058BC55 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AD36B828293B5CB20058BC55 /* Algorithms */; };
 		AD36B82E293B76FE0058BC55 /* CustomStringConvertable+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B82D293B76FD0058BC55 /* CustomStringConvertable+print.swift */; };
-		AD916A0E293CA01000BCAD34 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD916A0D293CA01000BCAD34 /* main.swift */; };
-		AD916A10293CA01600BCAD34 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD916A0F293CA01600BCAD34 /* input.swift */; };
+		AD916A13293D1B9F00BCAD34 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD916A12293D1B9F00BCAD34 /* main.swift */; };
+		AD916A15293D1BA600BCAD34 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD916A14293D1BA600BCAD34 /* input.swift */; };
+		AD916A16293E18F500BCAD34 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B75B293AA0530058BC55 /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -182,6 +183,8 @@
 		AD36B82D293B76FD0058BC55 /* CustomStringConvertable+print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomStringConvertable+print.swift"; sourceTree = "<group>"; };
 		AD916A0D293CA01000BCAD34 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AD916A0F293CA01600BCAD34 /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
+		AD916A12293D1B9F00BCAD34 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AD916A14293D1BA600BCAD34 /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,6 +549,7 @@
 		AD36B71D293AA0530058BC55 /* 2022 */ = {
 			isa = PBXGroup;
 			children = (
+				AD916A11293D1B9500BCAD34 /* Day5 */,
 				AD916A0C293C9FF900BCAD34 /* Day4 */,
 				AD36B824293B5C0E0058BC55 /* Day3 */,
 				AD36B71E293AA0530058BC55 /* Day2 */,
@@ -950,6 +954,15 @@
 			path = Day4;
 			sourceTree = "<group>";
 		};
+		AD916A11293D1B9500BCAD34 /* Day5 */ = {
+			isa = PBXGroup;
+			children = (
+				AD916A12293D1B9F00BCAD34 /* main.swift */,
+				AD916A14293D1BA600BCAD34 /* input.swift */,
+			);
+			path = Day5;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1015,9 +1028,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD916A0E293CA01000BCAD34 /* main.swift in Sources */,
-				AD916A10293CA01600BCAD34 /* input.swift in Sources */,
+				AD916A13293D1B9F00BCAD34 /* main.swift in Sources */,
+				AD916A15293D1BA600BCAD34 /* input.swift in Sources */,
 				AD36B82E293B76FE0058BC55 /* CustomStringConvertable+print.swift in Sources */,
+				AD916A16293E18F500BCAD34 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

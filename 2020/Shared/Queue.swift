@@ -1,6 +1,6 @@
 
 // Time to prepare for next years AOC with some awesome datastructues.
-// This should be based on a lined linst instad of an array, but im lazy.
+// This should be based on a linked linst instad of an array, but im lazy.
 struct Queue<Element> {
     var queue: Array<Element>
     
@@ -19,6 +19,10 @@ struct Queue<Element> {
     
     mutating func dequeue() -> Element? {
         queue.removeFirst()
+    }
+    
+    mutating func pop() -> Element? {
+        queue.removeLast()
     }
 }
 
