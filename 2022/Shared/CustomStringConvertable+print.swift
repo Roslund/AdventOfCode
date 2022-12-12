@@ -15,3 +15,9 @@ extension CustomStringConvertible {
         return self
     }
 }
+
+extension Collection where Element: CustomStringConvertible {
+    func println() {
+        self.forEach({print($0)})
+    }
+}
