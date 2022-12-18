@@ -10,10 +10,7 @@
 		AD36B829293B5CB20058BC55 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AD36B828293B5CB20058BC55 /* Algorithms */; };
 		AD36B82E293B76FE0058BC55 /* CustomStringConvertable+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B82D293B76FD0058BC55 /* CustomStringConvertable+print.swift */; };
 		AD916A16293E18F500BCAD34 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B75B293AA0530058BC55 /* Queue.swift */; };
-		ADEEF4C7294F3A31001FDE7C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEF4C6294F3A31001FDE7C /* main.swift */; };
 		ADEEF4C9294F3B43001FDE7C /* transposed.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEF4C8294F3B43001FDE7C /* transposed.swift */; };
-		ADEEF4CB294F46F6001FDE7C /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEF4CA294F46F6001FDE7C /* input.swift */; };
-		ADEEF4CC294F487A001FDE7C /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B738293AA0530058BC55 /* matrix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -199,6 +196,7 @@
 		ADEEF4C8294F3B43001FDE7C /* transposed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transposed.swift; sourceTree = "<group>"; };
 		ADEEF4CA294F46F6001FDE7C /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
 		ADEEF4CD294F7837001FDE7C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ADEEF4D0294F878E001FDE7C /* Monkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monkey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -981,6 +979,7 @@
 			children = (
 				AD5291A62947DB10006719C6 /* main.swift */,
 				AD5291A82947DD4E006719C6 /* input.swift */,
+				ADEEF4D0294F878E001FDE7C /* Monkey.swift */,
 			);
 			path = Day11;
 			sourceTree = "<group>";
@@ -1102,12 +1101,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADEEF4CC294F487A001FDE7C /* matrix.swift in Sources */,
-				ADEEF4CB294F46F6001FDE7C /* input.swift in Sources */,
 				AD36B82E293B76FE0058BC55 /* CustomStringConvertable+print.swift in Sources */,
 				ADEEF4C9294F3B43001FDE7C /* transposed.swift in Sources */,
 				AD916A16293E18F500BCAD34 /* Queue.swift in Sources */,
-				ADEEF4C7294F3A31001FDE7C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
