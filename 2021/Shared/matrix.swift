@@ -43,7 +43,7 @@ extension Array where Element: RandomAccessCollection {
     }
     
     func prettyprint() {
-        forEach({print($0)})
+        forEach({Swift.print($0)})
     }
 
 }
