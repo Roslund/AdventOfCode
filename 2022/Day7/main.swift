@@ -1,58 +1,51 @@
-import Foundation
-
-let sample = """
-$ cd /
-$ ls
-dir a
-14848514 b.txt
-8504156 c.dat
-dir d
-$ cd a
-$ ls
-dir e
-29116 f
-2557 g
-62596 h.lst
-$ cd e
-$ ls
-584 i
-$ cd ..
-$ cd ..
-$ cd d
-$ ls
-4060174 j
-8033020 d.log
-5626152 d.ext
-7214296 k
-"""
-
-
-
-class Directory {
-    let parent: Directory
-    let path: String
-    let name: String
-    let size: Int
-    
-    internal init(parent: Directory, path: String, name: String, size: Int) {
-        self.parent = parent
-        self.path = path
-        self.name = name
-        self.size = size
-    }
-}
-
+// FS root
+let root = fsObject(type: .Dir, name: "/")
 //Current workin directory
-var wd = ""
+var wd = root
+// Store a list of all subdirs for easy access
+var subdirs: [fsObject] = []
 
 
-let lines = sample.split(separator: /\n/)
+let lines = input.split(separator: /\n/).dropFirst()
 
+//Parsing the input, building the filesystem.
 for line in lines {
-//    if let match = String(line).firstMatch(of: /\$ cd (?<directory>.*)/) {
+    if let match = String(line).firstMatch(of: /\$ cd (?<directory>.*)/) {
+        let subdir = String(match.directory)
+        if subdir == ".." {
+            wd = wd.parent!
+        } else {
+            wd = wd.contents[subdir]!
+        }
+    }
+    
     if let match = String(line).firstMatch(of: /(?<size>[0-9]+) (?<name>.*)/) {
-        print(match.size, match.name)
+        let size = Int(match.size)!
+        let name = String(match.name)
+        wd.contents[name] = fsObject(type: .File, name: name, size: size, parent: wd)
+    }
+    
+    if let match = String(line).firstMatch(of: /dir (?<directory>.*)/) {
+        let name = String(match.directory)
+        wd.contents[name] = fsObject(type: .Dir, name: name, parent: wd)
         
+        // Store a list of all subdirs for easy access
+        subdirs.append(wd.contents[name]!)
     }
     
 }
+
+
+subdirs
+    .filter { $0.size <= 100000}
+    .reduce(0, {$0 + $1.size})
+    .print(prefix: "Part 1: ")
+
+
+// Why the parentheses are needed, idk...
+let toremove = 30000000 - (70000000 - root.size)
+
+subdirs.sorted(by: \.size)
+    .first(where: {$0.size > toremove})!
+    .size
+    .print(prefix: "Part 2: ")
