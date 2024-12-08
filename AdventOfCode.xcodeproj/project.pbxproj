@@ -1080,10 +1080,26 @@
 		ADBF546F2D0612F0006E8187 /* 2024 */ = {
 			isa = PBXGroup;
 			children = (
-				ADBF54722D06135A006E8187 /* input.swift */,
-				ADBF54702D0612FB006E8187 /* main.swift */,
+				ADBF54752D063050006E8187 /* Day2 */,
+				ADBF54742D063045006E8187 /* Day1 */,
 			);
 			path = 2024;
+			sourceTree = "<group>";
+		};
+		ADBF54742D063045006E8187 /* Day1 */ = {
+			isa = PBXGroup;
+			children = (
+				ADBF54702D0612FB006E8187 /* main.swift */,
+				ADBF54722D06135A006E8187 /* input.swift */,
+			);
+			path = Day1;
+			sourceTree = "<group>";
+		};
+		ADBF54752D063050006E8187 /* Day2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Day2;
 			sourceTree = "<group>";
 		};
 		ADEEF4C5294F3A1C001FDE7C /* Day8 */ = {
