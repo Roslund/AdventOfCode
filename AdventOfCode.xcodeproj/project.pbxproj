@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD1A39502D1F2F1A0000BD36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A394F2D1F2F170000BD36 /* main.swift */; };
-		AD1A39512D1F37230000BD36 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD696A7F2D1619EF008ECD7B /* input.swift */; };
+		AD1A39522D1F43950000BD36 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD696A8E2D16F5EB008ECD7B /* main.swift */; };
+		AD1A39532D1F439C0000BD36 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD696A832D16A53A008ECD7B /* input.swift */; };
 		AD36B829293B5CB20058BC55 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AD36B828293B5CB20058BC55 /* Algorithms */; };
 		AD36B82E293B76FE0058BC55 /* CustomStringConvertable+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B82D293B76FD0058BC55 /* CustomStringConvertable+print.swift */; };
 		AD696A7E2D1619C2008ECD7B /* Uppgift.md in Sources */ = {isa = PBXBuildFile; fileRef = AD696A7D2D1619BF008ECD7B /* Uppgift.md */; };
@@ -1245,12 +1245,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD36B82E293B76FE0058BC55 /* CustomStringConvertable+print.swift in Sources */,
-				AD1A39502D1F2F1A0000BD36 /* main.swift in Sources */,
+				AD1A39522D1F43950000BD36 /* main.swift in Sources */,
 				AD696A7E2D1619C2008ECD7B /* Uppgift.md in Sources */,
 				ADEEF4C9294F3B43001FDE7C /* transposed.swift in Sources */,
 				AD696A8C2D16F5C1008ECD7B /* matrix.swift in Sources */,
 				AD6F71172953A38D0008DC57 /* SortedByKeypath.swift in Sources */,
-				AD1A39512D1F37230000BD36 /* input.swift in Sources */,
+				AD1A39532D1F439C0000BD36 /* input.swift in Sources */,
 				AD916A16293E18F500BCAD34 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
