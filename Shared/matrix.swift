@@ -2,13 +2,16 @@ extension Array where Element: RandomAccessCollection {
     var rows: Int { self.count}
     var columns: Int { self.first!.count}
     
+    func indexIsValid(row: Int, column: Int) -> Bool {
+        return row >= 0 && row < self.count && column >= 0 && column < self[row].count
+    }
+    
     subscript(row: Int, column: Int) -> Element.Element? {
         get {
-            guard row >= 0 && row < self.count else { return nil }
-            guard column >= 0 && column < self[row].count else { return nil }
-            
+            guard indexIsValid(row: row, column: column) else { return nil }
             return self[row][column as! Element.Index]
         }
+
     }
     
     func elementsAdjacent(to position: (Int, Int)) -> [Element.Element] {
@@ -45,6 +48,31 @@ extension Array where Element: RandomAccessCollection {
     func prettyprint() {
         forEach({Swift.print($0)})
     }
+    
+    func monospacedPrint() {
+        forEach({
+            $0.forEach({Swift.print($0, separator: "", terminator: "")})
+            Swift.print("")
+        })
+    }
 
 }
-    
+
+
+//extension Array where Element: MutableCollection {
+//    private func indexIsValid(row: Int, column: Int) -> Bool {
+//        return row >= 0 && row < self.count && column >= 0 && column < self[row].count
+//    }
+//    
+//    subscript(row: Int, column: Int) -> Element.Element? {
+//        get {
+//            assert(indexIsValid(row: row, column: column), "Index out of range")
+//            return self[row][column as! Element.Index]
+//        }
+//        set(newValue) {
+//            assert(indexIsValid(row: row, column: column), "Index out of range")
+//            self[row][column as! Element.Index] = newValue!
+//        }
+//    }
+//}
+
