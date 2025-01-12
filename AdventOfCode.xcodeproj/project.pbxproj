@@ -10,12 +10,12 @@
 		AD1A39562D1F5DCF0000BD36 /* String+toCharMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A39552D1F5DB60000BD36 /* String+toCharMatrix.swift */; };
 		AD1A395B2D1FFDFB0000BD36 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A39592D1FFDFB0000BD36 /* Direction.swift */; };
 		AD1A395C2D1FFDFB0000BD36 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1A395A2D1FFDFB0000BD36 /* Point.swift */; };
+		AD30389D2D3278A900C5C946 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD30389C2D32729100C5C946 /* main.swift */; };
+		AD30389F2D3283B200C5C946 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD30389E2D3283B000C5C946 /* input.swift */; };
 		AD36B829293B5CB20058BC55 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AD36B828293B5CB20058BC55 /* Algorithms */; };
 		AD36B82E293B76FE0058BC55 /* CustomStringConvertable+print.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B82D293B76FD0058BC55 /* CustomStringConvertable+print.swift */; };
 		AD696A8C2D16F5C1008ECD7B /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B738293AA0530058BC55 /* matrix.swift */; };
 		AD6F71172953A38D0008DC57 /* SortedByKeypath.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F71162953A38D0008DC57 /* SortedByKeypath.swift */; };
-		AD89C5EF2D2A8D3D001207E8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89C5EE2D2A8C5C001207E8 /* main.swift */; };
-		AD89C5F12D2A9EBE001207E8 /* input.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89C5F02D2A9EBB001207E8 /* input.swift */; };
 		AD916A16293E18F500BCAD34 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36B75B293AA0530058BC55 /* Queue.swift */; };
 		ADEEF4C9294F3B43001FDE7C /* transposed.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEEF4C8294F3B43001FDE7C /* transposed.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +38,8 @@
 		AD1A39552D1F5DB60000BD36 /* String+toCharMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+toCharMatrix.swift"; sourceTree = "<group>"; };
 		AD1A39592D1FFDFB0000BD36 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		AD1A395A2D1FFDFB0000BD36 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		AD30389C2D32729100C5C946 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AD30389E2D3283B000C5C946 /* input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input.swift; sourceTree = "<group>"; };
 		AD36B53B293A9F390058BC55 /* AdventOfCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AdventOfCode; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD36B6AF293AA0520058BC55 /* StringExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtentions.swift; sourceTree = "<group>"; };
 		AD36B6B0293AA0520058BC55 /* Tanspose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tanspose.swift; sourceTree = "<group>"; };
@@ -276,6 +278,8 @@
 		AD30389B2D32721B00C5C946 /* Day8 */ = {
 			isa = PBXGroup;
 			children = (
+				AD30389E2D3283B000C5C946 /* input.swift */,
+				AD30389C2D32729100C5C946 /* main.swift */,
 			);
 			path = Day8;
 			sourceTree = "<group>";
@@ -1274,10 +1278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD89C5F12D2A9EBE001207E8 /* input.swift in Sources */,
+				AD30389F2D3283B200C5C946 /* input.swift in Sources */,
 				AD1A39562D1F5DCF0000BD36 /* String+toCharMatrix.swift in Sources */,
 				AD1A395B2D1FFDFB0000BD36 /* Direction.swift in Sources */,
-				AD89C5EF2D2A8D3D001207E8 /* main.swift in Sources */,
+				AD30389D2D3278A900C5C946 /* main.swift in Sources */,
 				AD1A395C2D1FFDFB0000BD36 /* Point.swift in Sources */,
 				AD36B82E293B76FE0058BC55 /* CustomStringConvertable+print.swift in Sources */,
 				ADEEF4C9294F3B43001FDE7C /* transposed.swift in Sources */,
